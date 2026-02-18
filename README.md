@@ -1,115 +1,107 @@
-# 🧁 App Home Baking - Automation Testing Project
+🧁 App Home Baking - Proyecto de Automatización de Pruebas
 
-End-to-end (E2E) automation testing project developed using Cypress to validate core functionalities of the App Home Baking application.
+Proyecto de automatización End-to-End (E2E) desarrollado con Cypress para validar las funcionalidades principales de la aplicación App Home Baking.
 
----
+📌 Descripción del Proyecto
 
-## 📌 Project Overview
+Este proyecto contiene pruebas automatizadas diseñadas para validar flujos críticos de usuario y comportamientos de la interfaz de la aplicación.
 
-This project contains automated tests designed to validate critical user flows and UI behaviors of the application.
+Principales Escenarios de Prueba Cubiertos
 
-### Main Test Scenarios Covered
+✅ Autenticación de usuarios
 
-- ✅ User authentication
-- ✅ Account/product validation
-- ✅ UI content verification
-- ✅ Functional navigation flows
-- ✅ Data validation within account cards
+✅ Validación de cuentas/productos
 
-The goal of this project is to demonstrate structured, maintainable, and scalable test automation practices.
+✅ Verificación de contenido en la UI
 
----
+✅ Flujos funcionales de navegación
 
-## 🛠 Tech Stack
+✅ Validación de datos dentro de las tarjetas de cuenta
 
-- **Cypress**
-- **JavaScript (ES6+)**
-- **Node.js**
-- **Git & GitHub**
+El objetivo de este proyecto es demostrar prácticas de automatización estructuradas, mantenibles y escalables.
 
----
+🛠 Stack Tecnológico
 
-## 📂 Project Structure
+Cypress
+
+JavaScript (ES6+)
+
+Node.js
+
+Git & GitHub
+
+📂 Estructura del Proyecto
 
 cypress/
 │
-├── e2e/ # Test specifications
-├── fixtures/ # Static test data
-├── support/ # Custom commands and global configuration
+├── e2e/ # Especificaciones de pruebas
+├── fixtures/ # Datos estáticos de prueba
+├── support/ # Comandos personalizados y configuración global
 │
-cypress.config.js # Cypress configuration file
-package.json # Project dependencies and scripts
+cypress.config.js # Archivo de configuración de Cypress
+package.json # Dependencias y scripts del proyecto
 
+⚙️ Instalación
 
-## ⚙️ Installation
-
-Clone the repository:
+Clonar el repositorio:
 
 git clone https://github.com/Hvargas0807/App-Home-Baking.git
 
-
-Navigate into the project:
+Ingresar al proyecto:
 
 cd App-Home-Baking
 
-
-Install dependencies:
+Instalar dependencias:
 
 npm install
 
-
----
-
-## ▶️ Running Tests
-
-### Open Cypress Test Runner (UI mode)
+▶️ Ejecución de Pruebas
+Abrir Cypress en modo interfaz (UI mode)
 
 npx cypress open
 
-
-### Run tests in headless mode
+Ejecutar pruebas en modo headless
 
 npx cypress run
 
+📊 Artefactos de Prueba
 
----
+Cypress genera automáticamente:
 
-## 📊 Test Artifacts
+Capturas de pantalla (para pruebas fallidas)
 
-Cypress automatically generates:
+Grabaciones en video (cuando se ejecuta en modo headless)
 
-- Screenshots (for failed tests)
-- Video recordings (when running headless)
-
-Artifacts are stored in:
+Los artefactos se almacenan en:
 
 cypress/screenshots/
 cypress/videos/
 
+🧩 Enfoque de Automatización
 
----
+Las aserciones están diseñadas para ser estables y legibles
 
-## 🧩 Automation Approach
+Las pruebas evitan el uso de esperas fijas (hard-coded waits)
 
-- Assertions are designed to be stable and readable
-- Tests avoid hard-coded waits
-- Selectors are targeted and specific
-- Test cases are structured for maintainability
-- Validation logic accounts for real DOM content (not CSS transformations)
+Los selectores son específicos y bien definidos
 
----
+Los casos de prueba están estructurados para facilitar el mantenimiento
 
-## 🚀 Future Improvements
+La lógica de validación considera el contenido real del DOM (no transformaciones CSS)
 
-- Implement Page Object Model (POM)
-- Add API testing coverage
-- Integrate GitHub Actions for CI/CD
-- Add test reporting (Mochawesome or similar)
-- Increase test data parameterization
+🚀 Mejoras Futuras
 
----
+Implementar Page Object Model (POM)
 
-## 👤 Author
+Agregar cobertura de pruebas de API
 
-**Habid Vargas**  
-QA Automation Engineer 
+Integrar GitHub Actions para CI/CD
+
+Agregar reporting de pruebas (Mochawesome u otro similar)
+
+Incrementar la parametrización de datos de prueba
+
+👤 Autor
+
+Habid Vargas
+QA Automation Engineer
